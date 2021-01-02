@@ -1,6 +1,6 @@
 # Traffic Split VPN routing on a Raspberry Pi with Policy Routing 
 
-This repostitory contains the scripts for the vpn traffic split vpn routing tutorial on my website:[https://philippmarcus.github.io/vpn-poliy-router](https://philippmarcus.github.io/vpn-poliy-router).
+This repostitory contains the scripts for the vpn traffic split vpn routing tutorial on my website: [https://philippmarcus.github.io/vpn-poliy-router](https://philippmarcus.github.io/vpn-poliy-router)
 
 
 The scripts in this repository set-up a Raspberry Pi based solution for a VPN traffic split router. The Raspberry Pi coexists as a router in the same subnet as the WAN internet router and can be used as a router by individual devices if required. This allows in the best case to consume both, domestic and international streaming/media content all without geolocation restrictions. Roughly, the solution works as follows:
