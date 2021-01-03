@@ -20,7 +20,9 @@ This repostirory contains the following files:
 ├── README.md (this readme)
 ├── default_network.sh (network config at boot time)
 ├── down.sh (OpenVPN down script)
-└── up.sh (OpenVPN up script)
+├── install-xtables-addons.sh (downloads, builds and installs the xtables-addons)
+├── up.sh (OpenVPN up script)
+└── update-geodb.sh (downloads and installs the latest geoip db from MindMax)
 ```
 
 ## Requirements
@@ -30,8 +32,11 @@ As described in the article, the scripts have the following requirements:
 - Raspberry Pi or a comparable another Linux box
 - OpenVPN
 - The package `ipcalc`
+- xtables addons, either installed via the attached script `install-xtables-addons.sh` or via the package `xtables-addons-common`
 
 ## Installation
 
+- Install the xtables addons using `install-xtables-addons.sh` or via the package `xtables-addons-common`
+- Define a cron job for update GeoDB using `update-geodb.sh` and execute it manually for initiation
 - Execute the script `default_network.sh` at boot time
 - Add the lines `up up.sh` and `down down.sh` to your OpenVPN connection configuration files
